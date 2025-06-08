@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Game Projects</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-container">
+        <a href="#home" class="navbar-brand">Axel Frederiks</a>
+        <div class="navbar-links">
+        <a href="">Projects</a>
+        <a href="#" id="aboutLink">About</a>
+        </div>
+    </div>
+    </nav>
+
+    <div id="aboutSidebar" class="sidebar">
+  <a href="#" class="close-btn" id="closeSidebar">&times;</a>
+  <h2>About Me</h2>
+  <p>Hello! I'm Axel Frederiks — a passionate game developer focused on creating PC games and prototypes.</p>
+  <p>I work with tools like Unity, Unreal Engine, C#, and JavaScript, and love experimenting with new mechanics.</p>
+  <p>When I'm not making games, I enjoy learning about game design, art, and interactive storytelling.</p>
+  <div class="social-buttons">
+  <a href="https://github.com/AxelFrederiks" target="_blank" class="social-btn github">GitHub</a>
+  <a href="https://www.linkedin.com/in/axel-frederiks-b90446305/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+  <a href="mailto:ajlfrederiks@gmail.com" class="social-btn email">Email</a>
+</div>
+</div>
+
+    <section id="home" class="home-section">
+        <h1>Hi, I'm Axel Frederiks</h1>
+        <p>I design and develop PC games — from fun prototypes to full releases. This is my portfolio where you can explore my work and get in touch.</p>
+        <a href="mailto:ajlfrederiks@gmail.com" class="mailto-button">Contact Me</a>
+        <a href="mailto:ajlfrederiks@gmail.com" class="mailto-button">Resume</a>
+        <br></br>
+        <div class="home-overview">
+            <div class="overview-item">
+                <h2>🎮 Projects</h2>
+                <p>Discover my latest games, prototypes, and experimental ideas.</p>
+            </div>
+            <div class="overview-item">
+                <h2>Studies</h2>
+                <p>Discover my latest games, prototypes, and experimental ideas.</p>
+            </div>
+        </div>
+    </section>
+    
+
+  <main id="gamesGrid">
+  </main>
+  <script src="js/main.js"></script>
+  <script>
+  const aboutLink = document.getElementById('aboutLink');
+  const aboutSidebar = document.getElementById('aboutSidebar');
+  const closeSidebar = document.getElementById('closeSidebar');
+
+  aboutLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutSidebar.classList.add('active');
+  });
+
+  closeSidebar.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutSidebar.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
